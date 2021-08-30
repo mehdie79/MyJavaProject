@@ -2,10 +2,6 @@
 
 The main goal of the game Rabbit Trails is to have the rabbit(main character) eat all the carrots(regular rewards) and make it out of the garden(maze) without getting caught by the eagle(moving enemy) or getting trapped into many animal traps(punishment).
 
-## Video
-Link for video of the demo of the game:
-https://youtu.be/oOIhiXw4gkM
-
 ## Getting Started
 
 To have the project set up and running locally follow the simple steps and examples below
