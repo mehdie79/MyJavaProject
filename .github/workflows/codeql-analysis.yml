@@ -60,9 +60,9 @@ jobs:
 
     - if: matrix.language == 'java' 
       name: Build Java
-      run:
-          --language="java" \
-          --command="mvn clean install --file pom.xml" \
+    - run: |
+        mvn -B package --file pom.xml
+        make release
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 https://git.io/JvXDl
@@ -71,9 +71,7 @@ jobs:
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
 
-    #- run: |
-    #   make bootstrap
-    #   make release
+
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
