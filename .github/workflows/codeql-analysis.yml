@@ -60,9 +60,7 @@ jobs:
 
     - if: matrix.language == 'java' 
       name: Build Java
-      run: mkdir databases
-          codeql database create \
-          ./databases/Launcher \
+      run:
           --language="java" \
           --command="mvn clean install --file pom.xml" \
 
